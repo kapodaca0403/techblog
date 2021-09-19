@@ -1,0 +1,24 @@
+body {
+  background-color: plum;
+}
+h1 {
+  border-radius: 25px;
+  color: black;
+  background: plum;
+  padding: 20px;
+  width: 250px;
+  height: 100px;
+  box-shadow: 5px 5px grey;
+}
+header {
+  background-color: black;
+  margin: 0;
+}
+
+#card-header {
+  background-color: black;
+  color: white;
+}
+#card {
+  width: 200;
+}
