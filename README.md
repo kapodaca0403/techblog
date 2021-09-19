@@ -18,7 +18,7 @@ This project is licensed under the MIT license.
 
 ## Description
 
-[[ADDDD DESCRIPTION]]
+This is an app where the tech community can create an account and blog about what they know best...tech. As stated before, users can create a new account or simply login if an account has previously been created. Once logged in users can create a new post with a title and a text field for whatever it is the user would like to blog about. Users can click the dashboard button on the navbar and see posts created by other users as well.
 
 ## Tests
 
@@ -26,7 +26,7 @@ undefined
 
 ## Usage
 
-[[ADD INFO]]
+To be in the tech community and blog about tech, tech and more tech.
 
 ## Contribution
 
