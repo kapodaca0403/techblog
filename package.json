@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/kapodaca0403/techblog/issues"
   },
-  "homepage": "https://github.com/kapodaca0403/techblog#readme"
+  "homepage": "https://github.com/kapodaca0403/techblog#readme",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.2",
+    "express-handlebars": "^5.3.4",
+    "sequelize": "^6.6.5"
+  }
 }

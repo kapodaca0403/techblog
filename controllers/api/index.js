@@ -4,7 +4,7 @@ const comments = require("./comment");
 const posts = require("./post");
 const user = require("./user");
 
-router.use("/comment", comments);
+router.use("comment", comments);
 router.use("/post", posts);
 router.use("/users", user);
 
