@@ -19,7 +19,11 @@ router.get("/:id", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const postData = await post.create(req.body);
+    const postData = await post.create({
+      username: req.body.username,
+      postText: req.body.postText,
+      title: req.body.title,
+    });
     res.status(200).json(postData);
   } catch (err) {
     res.status(500).json(err);
@@ -43,3 +47,22 @@ router.put("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.delete("/:id", async (req, res) => {
+  try {
+    const postData = await post.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!postData) {
+      res.status(404).json({ message: "Nothing found " });
+      return;
+    }
+    res.status(200).json(postData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+module.exports = router;
